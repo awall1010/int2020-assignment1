@@ -20,12 +20,12 @@ int main(int argc, char const *argv[]) {
   cin>> inflationRatePerc;
   cout<<"Enter years till purchase: "<<endl;
   cin>> yearsTillPurchase;
-  double total = itemCost;=
+  double total = itemCost;
   double infRate = (inflationRatePerc/100);
   for (int i = 0; i < yearsTillPurchase; ++i) {
     itemCost *= 1+(infRate);
-    cout<< i << endl;
-  }  
+
+  }
   cout<<"the estimated cost is: $" << itemCost <<endl;
   return 0;
 }
