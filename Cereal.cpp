@@ -6,13 +6,13 @@
 using namespace std;
 int main(int argc, char const *argv[]) {
   float weight;
-  cout<<"Enter weight of cereal in ounces: "<< endl;
+  cout<<"Enter weight of cereal in ounces: "<< endl;//cereal weight in ounces
   cin>>weight;
-  float metricTons = weight/35273.92;
+  float metricTons = weight/35273.92; //calculate metric tons
   cout<< "Metric tons: " << metricTons <<endl;
 
-  //how many cereal boxes needed to get one metric ton
-  int NumBoxes = 35273.92/weight;
+
+  int NumBoxes = 35273.92/weight; //calculate boxes needed for one metric ton
   cout<< NumBoxes <<" boxes of cereal are needed to yield one metric ton of cereal. "<< endl;
 
   return 0;

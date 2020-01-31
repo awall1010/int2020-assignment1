@@ -8,18 +8,18 @@
 #include<iostream>
 using namespace std;
 int main(int argc, char const *argv[]) {
-  float hourlyWage = 16.00;
+  float hourlyWage = 16.00; //hourly wage
   float hoursWorked;
   cout<< "enter amount of hours worked this week: " << endl;
   cin>> hoursWorked;
   float weeklyWagePreTax = hourlyWage * hoursWorked;
-  float SStax = weeklyWagePreTax*.06;
+  float SStax = weeklyWagePreTax*.06; //calculate all taxes
   float fedIncTax = weeklyWagePreTax * .14;
   float stateIncTax = weeklyWagePreTax * .05;
   float medInsur = 10.0;
 
-  float wagePostTax= weeklyWagePreTax - SStax - fedIncTax-stateIncTax-medInsur;
-  cout<< "Gross Pay: " << weeklyWagePreTax<< endl;
+  float wagePostTax= weeklyWagePreTax - SStax - fedIncTax-stateIncTax-medInsur; //calculate wage
+  cout<< "Gross Pay: " << weeklyWagePreTax<< endl; //print out everything
   cout<< "Social Security Tax:" << SStax <<endl;
   cout<< "Federal Income Tax: " << fedIncTax<< endl;
   cout<< "State Income Tax: " <<stateIncTax << endl;

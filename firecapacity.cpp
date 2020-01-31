@@ -16,11 +16,11 @@ int main(int argc, char const *argv[]) {
   cout<<"enter number of people present: " << endl;
   cin>> numPeople;
 
-  if (numPeople<=roomCapacity) {
+  if (numPeople<=roomCapacity) { //if less thanmax
     int peopleAllowed= roomCapacity-numPeople;
     cout<< "It is legal to hold the meeting and "<< peopleAllowed << " additional person may attend" << endl;
   }
-  else{
+  else{ //if greater than max
     int peopleRemoved = numPeople-roomCapacity;
     cout<< "It is illegal due to fire regulations to have this meeting and "<<peopleRemoved << " need to leave in order for it to be legal "<< endl;
   }
